@@ -7,7 +7,7 @@ export default class extends module {
         super(m);
         this.events = {
             click: {
-                addmore: updateList,
+                addmore: 'updateList',
             }
         }
     }
