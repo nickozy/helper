@@ -12,6 +12,10 @@ export default class extends module {
         }
     }
 
+    updateList(){
+        this.scroll.update();
+    }
+
     init() {
         console.log("hello")
         console.log("world")
@@ -61,8 +65,5 @@ export default class extends module {
 
     destroy() {
         this.scroll.destroy();
-    }
-    updateList(){
-        this.scroll.update();
     }
 }
