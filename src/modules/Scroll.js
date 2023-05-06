@@ -5,6 +5,11 @@ import LocomotiveScroll from 'locomotive-scroll';
 export default class extends module {
     constructor(m) {
         super(m);
+        this.events = {
+            click: {
+                addmore: updateList,
+            }
+        }
     }
 
     init() {
@@ -13,7 +18,7 @@ export default class extends module {
         this.scroll = new LocomotiveScroll({
             el: this.el,
             getDirection: true,
-            smooth: false,
+            smooth: true,
             multiplier: 1.44,
         });
 
@@ -56,5 +61,8 @@ export default class extends module {
 
     destroy() {
         this.scroll.destroy();
+    }
+    updateList(){
+        this.scroll.update();
     }
 }
