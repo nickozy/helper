@@ -11,14 +11,7 @@ export default class extends module {
             }
         }
     }
-
-    updateList(){
-        this.scroll.update();
-    }
-
     init() {
-        console.log("hello")
-        console.log("world")
         this.scroll = new LocomotiveScroll({
             el: this.el,
             getDirection: true,
@@ -38,6 +31,10 @@ export default class extends module {
         this.scroll.on('scroll', function (t) {
             document.documentElement.setAttribute("data-direction", t.direction);
         });
+    }
+
+    updateList(){
+        this.scroll.update();
     }
 
     /**
