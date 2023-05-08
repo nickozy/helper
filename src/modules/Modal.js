@@ -76,15 +76,12 @@ export default class extends module {
   
       lightboxClose.on("click", function () {
         tl.reverse();
-        this.call('update', null, 'app')
       });
       $(document).on("keydown", function (e) {
         if (e.key === "Escape") tl.reverse();
-        this.call('update', null, 'app')
       });
       $(document).on("click", lightbox, function (e) {
         if (!$(e.target).is(lightbox.find("*"))) tl.reverse();
-        this.call('update', null, 'app')
       });
       
     }
