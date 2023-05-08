@@ -19,7 +19,7 @@ export default class extends module {
             el: this.el,
             getDirection: true,
             smooth: true,
-            multiplier: 0.4,
+            multiplier: 0.8,
         });
 
         this.scroll.on('call', (func, way, obj, id) => {
