@@ -71,7 +71,6 @@ export default class extends module {
             lightboxReady();
           }
         });
-        this.call('update', null, 'app')
       });
   
       lightboxClose.on("click", function () {
