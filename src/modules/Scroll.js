@@ -2,6 +2,8 @@ import { module } from 'modujs';
 import { lazyLoadImage } from "../utils/image";
 import LocomotiveScroll from 'locomotive-scroll';
 
+const html = document.documentElement
+
 export default class extends module {
     constructor(m) {
         super(m);
@@ -16,7 +18,7 @@ export default class extends module {
             el: this.el,
             getDirection: true,
             smooth: true,
-            multiplier: 1.44,
+            multiplier: 1,
         });
 
         this.scroll.on('call', (func, way, obj, id) => {
@@ -30,6 +32,18 @@ export default class extends module {
 
         this.scroll.on('scroll', function (t) {
             document.documentElement.setAttribute("data-direction", t.direction);
+        });
+
+        this.scroll.on('scroll', function (t) {
+            document.documentElement.setAttribute("data-direction", t.direction);
+
+            // window.scrollObj = t.scroll
+
+            if(t.scroll.y > 50) {
+                html.classList.add('has-logo-shrink');
+            } else {
+                html.classList.remove('has-logo-shrink');
+            }
         });
     }
 
