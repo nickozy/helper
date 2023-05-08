@@ -14,11 +14,12 @@ export default class extends module {
         }
     }
     init() {
+        console.log('0.4')
         this.scroll = new LocomotiveScroll({
             el: this.el,
             getDirection: true,
             smooth: true,
-            multiplier: 0.8,
+            multiplier: 0.4,
         });
 
         this.scroll.on('call', (func, way, obj, id) => {
