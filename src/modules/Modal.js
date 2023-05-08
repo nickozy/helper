@@ -7,7 +7,7 @@ export default class extends module {
         }
 
     init() {
-      
+
       let lightbox = $("[tr-ajaxmodal-element='lightbox']");
       let lightboxClose = $("[tr-ajaxmodal-element='lightbox-close']").attr("aria-label", "Close Modal");
       let lightboxModal = $("[tr-ajaxmodal-element='lightbox-modal']");
@@ -71,17 +71,22 @@ export default class extends module {
             lightboxReady();
           }
         });
+        this.call('update', null, 'app')
       });
   
       lightboxClose.on("click", function () {
         tl.reverse();
+        this.call('update', null, 'app')
       });
       $(document).on("keydown", function (e) {
         if (e.key === "Escape") tl.reverse();
+        this.call('update', null, 'app')
       });
       $(document).on("click", lightbox, function (e) {
         if (!$(e.target).is(lightbox.find("*"))) tl.reverse();
+        this.call('update', null, 'app')
       });
-  
+      
     }
+    
   }
