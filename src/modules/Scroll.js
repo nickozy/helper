@@ -74,6 +74,10 @@ export default class extends module {
             //callback
         })
     }
+    
+    scrollToTop() {
+        this.scroll?.scrollTo(0)
+    }
 
     destroy() {
         this.scroll.destroy();
