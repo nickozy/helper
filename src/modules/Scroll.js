@@ -18,7 +18,7 @@ export default class extends module {
             el: this.el,
             getDirection: true,
             smooth: true,
-            multiplier: 1,
+            multiplier: 1.44,
         });
 
         this.scroll.on('call', (func, way, obj, id) => {
@@ -78,3 +78,4 @@ export default class extends module {
         this.scroll.destroy();
     }
 }
+
