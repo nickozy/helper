@@ -17,7 +17,7 @@ export default class extends module {
         this.scroll = new LocomotiveScroll({
             el: this.el,
             getDirection: true,
-            smooth: false,
+            smooth: true,
             multiplier: 1.44,
         });
 
