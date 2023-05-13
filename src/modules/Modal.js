@@ -55,6 +55,7 @@ export default class extends module {
   
       $(document).on("click", cmsLink, function (e) {
         focusedLink = $(this);
+        this.call('play', null, 'Sound')
         initialPageUrl = window.location.href;
         e.preventDefault();
         let linkUrl = $(this).attr("href");
