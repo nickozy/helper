@@ -6,6 +6,12 @@ export default class extends module {
         super(m);
         }
 
+onClick(){
+        setTimeout(()=>{
+          this.call('play', null, 'Sound')
+        }, 3000)
+      }
+
     init() {
 
       let lightbox = $("[tr-ajaxmodal-element='lightbox']");
@@ -55,7 +61,6 @@ export default class extends module {
   
       $(document).on("click", cmsLink, function (e) {
         focusedLink = $(this);
-        this.call('play', null, 'Sound')
         initialPageUrl = window.location.href;
         e.preventDefault();
         let linkUrl = $(this).attr("href");
@@ -71,7 +76,9 @@ export default class extends module {
             keepFocusWithinLightbox();
             lightboxReady();
           }
+          
         });
+        
       });
   
       lightboxClose.on("click", function () {
