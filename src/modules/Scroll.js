@@ -52,7 +52,7 @@ export default class extends module {
         setTimeout(() => {
             console.log('update')
         this.scroll.update();
-        }, 200);
+        }, 100);
     }
 
     /**
