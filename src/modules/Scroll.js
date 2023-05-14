@@ -49,10 +49,10 @@ export default class extends module {
     }
 
     updateList(){
-        // setTimeout(() => {
+        setTimeout(() => {
             console.log('update')
         this.scroll.update();
-        // }, 1000);
+        }, 50);
     }
 
     /**
