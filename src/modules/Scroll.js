@@ -49,6 +49,7 @@ export default class extends module {
     }
 
     updateList(){
+        console.log('update')
         this.scroll.update();
     }
 
