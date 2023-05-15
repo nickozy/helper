@@ -3,6 +3,6 @@ export { default as Scroll } from "./modules/Scroll";
 export { default as Nav } from "./modules/Nav";
 export { default as Slider } from "./modules/Slider";
 export { default as Split } from "./modules/Split";
+export { default as Sound } from "./modules/Sound";
 export { default as Modal } from "./modules/Modal";
 export { default as ScrollTo } from "./modules/ScrollTo";
-export { default as Sound } from "./modules/Sound";

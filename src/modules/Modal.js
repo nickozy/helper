@@ -4,18 +4,12 @@ import { gsap } from 'gsap';
 export default class extends module {
     constructor(m) {
         super(m);
-        this.events = {
-          click: {
-              modalsound: 'modalsound',
-          }
-      }
+      //   this.events = {
+      //     click: {
+      //         modalsound: 'modalsound',
+      //     }
+      // }
         }
-
-onClick(){
-        setTimeout(()=>{
-          this.call('play', null, 'Sound')
-        }, 3000)
-      }
 
     init() {
 
@@ -65,6 +59,7 @@ onClick(){
       }
   
       $(document).on("click", cmsLink, function (e) {
+        
         focusedLink = $(this);
         initialPageUrl = window.location.href;
         e.preventDefault();
@@ -80,12 +75,20 @@ onClick(){
             tl.play();
             keepFocusWithinLightbox();
             lightboxReady();
+            
+              const soundControl = document.querySelector('.c-mentor__control');
+              soundControl.addEventListener('click',()=>{
+              console.log(this.el);
+              soundControl.classList.toggle("active");
+              let videoEl = document.getElementsByTagName('video')[0];
+              videoEl.muted = (videoEl.muted == false) ? true : false;
+          })
+        
           }
           
         });
-        
       });
-  
+      
       lightboxClose.on("click", function () {
         tl.reverse();
       });
@@ -97,11 +100,12 @@ onClick(){
       });
        
     }
-    modalsound(){
-      console.log(this.el)
-      setTimeout(()=>{
-      this.call('init', null, 'Sound');
-    }, 1000)
-    }
-    
-  }
+  //   modalsound(){
+
+      
+  //     setTimeout(()=>{
+  //       console.log('init');
+  //     this.call('sound', 'Sound');
+  //   }, 1000)
+  // }
+}
