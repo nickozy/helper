@@ -98,7 +98,7 @@ onClick(){
        
     }
     modalsound(){
-      comsole.log(this.el)
+      console.log(this.el)
       this.call('toggle', null, 'Sound');
     }
     
