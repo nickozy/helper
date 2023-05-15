@@ -90,7 +90,8 @@ onClick(){
       $(document).on("click", lightbox, function (e) {
         if (!$(e.target).is(lightbox.find("*"))) tl.reverse();
       });
-      
+      this.call('toggle', null, 'Sound');
     }
+    
     
   }
