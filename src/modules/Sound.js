@@ -5,21 +5,14 @@ export default class extends module {
         super(m);
         this.events = {
             click: {
-              play: 'play',
-              pause: 'pause',
+              toggle: 'toggle',
             }
           }
     }
-    play(){
+    toggle(){
         const el = this.el
-        el.classList.add("play")
-        let videoEl = document.querySelector('[data-video-sound]');
-        videoEl.muted = false;
-}
-    pause(){
-        const el = this.el
-        el.classList.remove("play")
-        let videoEl = document.querySelector('[data-video-sound]');
-        videoEl.muted = true;
+        el.classList.add("active")
+        let videoEl = document.getElementsByTagName('video')[0];
+        videoEl.muted = (videoEl.muted == false) ? true : false;
 }
 }  
