@@ -10,8 +10,8 @@ export default class extends module {
           }
     }
     toggle(){
-        const el = this.el
-        el.classList.add("active")
+        const el = this.$el
+        el.classList.toggle("active")
         let videoEl = document.getElementsByTagName('video')[0];
         videoEl.muted = (videoEl.muted == false) ? true : false;
 }
