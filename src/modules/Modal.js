@@ -4,6 +4,11 @@ import { gsap } from 'gsap';
 export default class extends module {
     constructor(m) {
         super(m);
+        this.events = {
+          click: {
+              modalsound: 'modalsound',
+          }
+      }
         }
 
 onClick(){
@@ -90,8 +95,10 @@ onClick(){
       $(document).on("click", lightbox, function (e) {
         if (!$(e.target).is(lightbox.find("*"))) tl.reverse();
       });
+       
+    }
+    modalsound(){
       this.call('toggle', null, 'Sound');
     }
-    
     
   }
