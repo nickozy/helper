@@ -12,9 +12,9 @@ export default class extends module {
     init(){
         const soundControl = document.querySelector('[data-module-sound]')
         soundControl.addEnevntListener('click', ()=>{
-        soundControl.classList.toggle("active");
-        let videoEl = document.getElementsByTagName('video')[0];
-        videoEl.muted = (videoEl.muted == false) ? true : false;
+          soundControl.classList.toggle("active");
+          let videoEl = document.getElementsByTagName('video')[0];
+          videoEl.muted = (videoEl.muted == false) ? true : false;
       })
 }
 }  
