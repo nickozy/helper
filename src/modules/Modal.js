@@ -99,7 +99,9 @@ onClick(){
     }
     modalsound(){
       console.log(this.el)
+      setTimeout(()=>{
       this.call('init', null, 'Sound');
+    }, 1000)
     }
     
   }
