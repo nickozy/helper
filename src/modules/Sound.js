@@ -10,7 +10,7 @@ export default class extends module {
           }
     }
     init(){
-        const soundControl = document.querySelector('[data-module-sound]')
+        const soundControl = document.querySelector('.c-mentor__control')
         soundControl.addEnevntListener('click', ()=>{
           soundControl.classList.toggle("active");
           let videoEl = document.getElementsByTagName('video')[0];
