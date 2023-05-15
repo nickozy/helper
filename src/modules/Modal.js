@@ -99,7 +99,7 @@ onClick(){
     }
     modalsound(){
       console.log(this.el)
-      this.call('toggle', null, 'Sound');
+      this.call('init', null, 'Sound');
     }
     
   }
