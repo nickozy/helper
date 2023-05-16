@@ -25,6 +25,6 @@ export default class extends module {
     }
 
     onClick() {
-        this.call('update', null, 'Scroll')
+        this.call('updateList', null, 'Scroll')
     }
 }
