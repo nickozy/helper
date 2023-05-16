@@ -9,6 +9,7 @@ export default class extends module {
             click: {
               company: 'companyToggle',
               grade: 'gradeToggle',
+              close: 'close',
             },
           }
     }
@@ -21,6 +22,13 @@ export default class extends module {
     gradeToggle(){
       base.classList.toggle("filter-active")
       base.classList.toggle("is-grade")
+    }
+
+    close(){
+      base.classList.remove("filter-active")
+      base.classList.remove("is-grade")
+      base.classList.remove("is-company")
+
     }
 
 }
