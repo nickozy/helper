@@ -15,11 +15,11 @@ export default class extends module {
 
 
     companyToggle(){
-      base.classList.toggle("filter-open")
+      base.classList.toggle("filter-active")
       base.classList.toggle("is-company")
     }
     gradeToggle(){
-      base.classList.toggle("filter-open")
+      base.classList.toggle("filter-active")
       base.classList.toggle("is-grade")
     }
 
