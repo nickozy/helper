@@ -85,5 +85,8 @@ export default class extends module {
     destroy() {
         this.scroll.destroy();
     }
+    update() {
+        this.scroll?.update();
+    }
 }
 
