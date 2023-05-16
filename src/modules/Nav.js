@@ -1,34 +1,26 @@
 import { module } from 'modujs';
 
-const nav = document.body;
+const base = document.body;
 
 export default class extends module {
     constructor(m) {
         super(m);
         this.events = {
             click: {
-              toggle: 'toggleNavMob',
-            },
-            mouseenter: {
-              open: 'openNav',
-              close: 'closeNav',
+              company: 'companyToggle',
+              grade: 'gradeToggle',
             },
           }
     }
 
-    openNav(){
-        if (nav.classList.contains('menu-open')) {
-            nav.classList.remove('menu-open');
-          } else {
-            nav.classList.add('menu-open');
-          }
+
+    companyToggle(){
+      base.classList.toggle("filter-open")
+      base.classList.toggle("is-company")
     }
-    
-    closeNav(){
-        nav.classList.remove("menu-open")
-    }
-    toggleNavMob(){
-        nav.classList.toggle("menu-open")
+    gradeToggle(){
+      base.classList.toggle("filter-open")
+      base.classList.toggle("is-grade")
     }
 
 }
