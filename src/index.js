@@ -38,7 +38,7 @@ function init() {
   html.classList.remove("is-loading");
   console.log(
     "%c%s",
-    "border-radius: 6px; padding: 6px; color: #000; background: #fff;",
+    "border-radius: 6px; padding: 6px; color: #fff; background: #000;",
     "dev by nick — https://t.me/nickxsy"
   );
 }
