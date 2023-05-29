@@ -36,4 +36,9 @@ function init() {
   html.classList.add("is-loaded");
   html.classList.add("is-ready");
   html.classList.remove("is-loading");
+  console.log(
+    "%c%s",
+    "border-radius: 6px; padding: 6px; color: #000; background: #fff;",
+    "dev by nick — https://t.me/nickxsy"
+  );
 }
