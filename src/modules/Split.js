@@ -23,7 +23,7 @@ gsap.from(elem.chars, {
     rotate: 2,
     duration: 1,
     color: "transparent",
-    stagger: { amount: 0.6 },
+    stagger: { amount: 0.3 },
     })
 gsap.from(elem2.chars, {
     opacity: 0,
