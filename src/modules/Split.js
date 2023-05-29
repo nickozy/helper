@@ -1,7 +1,6 @@
 import { module } from 'modujs';
 import SplitType from 'split-type';
 import gsap from 'gsap';
-import { EasePack } from 'gsap/all';
 
 
 export default class extends module {
