@@ -18,7 +18,7 @@ gsap.from(elem.chars, {
     y: '50%',
     ease: 'power2.out',
     rotate: 2,
-    duration: 0.3,
+    duration: 0.6,
     stagger: { amount: 0.3 },
     })
    }   
