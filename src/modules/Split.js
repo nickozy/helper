@@ -10,7 +10,10 @@ export default class extends module {
 
   init(e) {
     
-let elem = new SplitType( this.el, { types: 'words, chars' })
+   const el1 = document.querySelector("h1");
+   const el2 = document.querySelector(".hero-title__line-span");
+let elem = new SplitType( el1, { types: 'words, chars' })
+let elem2 = new SplitType( el2, { types: 'words, chars' })
 
 
 gsap.from(elem.chars, {
@@ -21,5 +24,14 @@ gsap.from(elem.chars, {
     duration: 0.6,
     stagger: { amount: 0.3 },
     })
+gsap.from(elem2.chars, {
+    opacity: 0,
+    y: '50%',
+    ease: 'power2.out',
+    rotate: 2,
+    duration: 0.6,
+    stagger: { amount: 0.3 },
+    })
    }   
 }
+
