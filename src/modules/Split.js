@@ -15,7 +15,8 @@ let elem = new SplitType( this.el, { types: 'words, chars' })
 
 gsap.from(elem.chars, {
     opacity: 0,
-    y: '20%',
+    y: '50%',
+    ease: ease,
     rotate: 2,
     duration: 0.3,
     stagger: { amount: 0.3 },
