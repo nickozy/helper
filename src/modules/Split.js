@@ -20,6 +20,7 @@ gsap.from(elem.chars, {
     rotate: 2,
     duration: 0.6,
     filter: 'blur(1rem)',
+    color: "transparent",
     stagger: { amount: 0.3 },
     })
    }   
