@@ -19,7 +19,7 @@ let elem2 = new SplitType( el2, { types: 'words, chars' })
 gsap.from(elem.chars, {
     opacity: 0,
     y: '50%',
-    ease: 'power2.out',
+    ease: 'power1.out',
     rotate: 2,
     duration: 0.6,
     stagger: { amount: 0.3 },
@@ -27,7 +27,7 @@ gsap.from(elem.chars, {
 gsap.from(elem2.chars, {
     opacity: 0,
     y: '50%',
-    ease: 'power1.out',
+    ease: 'power4.out',
     rotate: 2,
     duration: 0.6,
     stagger: { amount: 0.3 },
