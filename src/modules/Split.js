@@ -10,7 +10,7 @@ export default class extends module {
 
   init(e) {
 
-let elem = new SplitType( this.el, { types: 'words' })
+let elem = new SplitType( this.el, { types: 'words, chars' })
 
 console.log("color")
 // gsap.from(elem.chars, {
@@ -21,7 +21,7 @@ console.log("color")
 //     duration: 0.6,
 //     stagger: { amount: 0.3 },
 //     })
-gsap.from(elem.words, {
+gsap.from(elem.chars, {
     opacity: 0,
     y: '50%',
     ease: 'cubic-bezier(0.23, 0.72, 0.59, 0.95)',
