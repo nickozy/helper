@@ -27,9 +27,9 @@ gsap.from(elem.chars, {
 gsap.from(elem2.chars, {
     opacity: 0,
     y: '50%',
-    ease: 'power2.out',
+    ease: 'power1.out',
     rotate: 2,
-    duration: 0.5,
+    duration: 0.6,
     stagger: { amount: 0.3 },
     })
    }   
