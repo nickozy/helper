@@ -15,23 +15,24 @@ export default class extends module {
 let elem = new SplitType( el1, { types: 'words, chars' })
 let elem2 = new SplitType( el2, { types: 'words, chars' })
 
-console.log("split")
-gsap.from(elem.chars, {
+console.log("split2")
+gsap.from(elem2.chars, {
     opacity: 0,
     y: '50%',
     ease: 'power1.out',
     rotate: 2,
     duration: 1,
+    color: "transparent",
     stagger: { amount: 0.3 },
     })
-gsap.from(elem2.chars, {
-    opacity: 0,
-    y: '50%',
-    ease: 'power4.out',
-    rotate: 2,
-    duration: 1,
-    stagger: { amount: 0.3 },
-    })
+// gsap.from(elem2.chars, {
+//     opacity: 0,
+//     y: '50%',
+//     ease: 'power4.out',
+//     rotate: 2,
+//     duration: 1,
+//     stagger: { amount: 0.3 },
+//     })
    }   
 }
 
