@@ -18,7 +18,7 @@ export default class extends module {
             el: this.el,
             getDirection: true,
             smooth: true,
-            multiplier: 1,
+            multiplier: 0.8,
             lerp: 0.07,
         });
 
