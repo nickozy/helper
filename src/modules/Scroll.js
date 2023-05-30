@@ -18,8 +18,8 @@ export default class extends module {
             el: this.el,
             getDirection: true,
             smooth: true,
-            multiplier: 0.8,
-            lerp: 0.2,
+            multiplier: 0.6,
+            lerp: 0.05,
         });
 
         this.scroll.on('call', (func, way, obj, id) => {
