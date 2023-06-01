@@ -20,6 +20,13 @@ gsap.from(elem.chars, {
     rotate: 2,
     duration: 0.6,
     // filter: 'blur(1rem)',
+    // color: "transparent",
+    stagger: { amount: 0.3 },
+    })
+gsap.from(elem.chars, {
+    ease: 'cubic-bezier(0.23, 0.72, 0.59, 0.95)',
+    duration: 1,
+    // filter: 'blur(1rem)',
     color: "transparent",
     stagger: { amount: 0.3 },
     })
