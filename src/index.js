@@ -39,6 +39,6 @@ function init() {
   console.log(
     "%c%s",
     "padding: 6px; color: #fff; background: #000;",
-    "dev by nick — https://t.me/nickxsy"
+    "Development & Animation by Nick — https://t.me/nickxsy"
   );
 }
