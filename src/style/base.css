@@ -104,7 +104,7 @@ html.has-scroll-smooth {
 
 .c-team__card-title,
 .c-filter__field-text {
-  font-size: clamp(2.2rem, 1.2rem + 3.8vw, 3.75rem) !important;
+  font-size: clamp(2.2rem, 1.2rem + 3.8vw, 3.35rem) !important;
 }
 
 /* ---- >Heading size ---- */
