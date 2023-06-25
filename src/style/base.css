@@ -1,0 +1,130 @@
+/* ------ Base style ------ */
+
+:root {
+  --color-dark: 29, 29, 29;
+}
+
+[data-page="mentor"] {
+  --color-dark: 19, 19, 19;
+}
+
+*,
+:after,
+:before {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  outline: none;
+}
+
+/* html, body{
+  font-size: 1vw;
+  }
+  */
+
+::-moz-selection {
+  background-color: #0015ff;
+  color: #fff;
+  text-shadow: none;
+}
+
+::selection {
+  background-color: #0015ff;
+  color: #fff;
+  text-shadow: none;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: inherit;
+}
+
+[no-click] {
+  pointer-events: none;
+}
+
+[click] {
+  pointer-events: all;
+}
+
+.visually-hidden {
+  position: absolute;
+  margin: -1px;
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+@media (max-width: 360px) {
+  html,
+  body {
+    font-size: 4.44vw;
+  }
+}
+
+/* -------- Hide native scrollbar -------- */
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* -------- >Hide native scrollbar -------- */
+
+/* ------ >Base style ------ */
+
+/* ------ Fix back locomotive scroll ------ */
+
+html.has-scroll-smooth {
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+/* ------ >Fix back locomotive scroll ------ */
+
+/* ---- Heading size ---- */
+
+.hero-title,
+.mentor-title {
+  font-size: clamp(4.2rem, 1.6rem + 7vw, 9rem) !important;
+}
+
+.c-team__card-title,
+.c-filter__field-text {
+  font-size: clamp(2.2rem, 1.2rem + 3.8vw, 3.75rem) !important;
+}
+
+/* ---- >Heading size ---- */
+
+/* -------- Top button -------- */
+
+.o-back {
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0.3s ease, opacity 0.3s ease, background 0.3s ease;
+}
+
+html.has-logo-shrink.is-loaded .o-back {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* -------- >Top button -------- */

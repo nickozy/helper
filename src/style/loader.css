@@ -1,0 +1,96 @@
+/* ----- Loader ----- */
+.o-loader_spinner {
+  display: block;
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 2px solid transparent;
+  border-top-color: currentColor;
+  border-right-color: currentColor;
+  border-radius: 50%;
+  animation: loaderSpinner 0.3s linear infinite;
+  bottom: 2rem;
+  position: absolute;
+  right: 1.875rem;
+  z-index: 20;
+  color: #fff !important;
+  transition: opacity 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+@keyframes loaderSpinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ----- >Loader ----- */
+
+/* -------- Transition -------- */
+
+.o-loader {
+  opacity: 1;
+  visibility: visible;
+}
+
+.is-ready .o-loader {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-out, visibility 0.3s ease-out;
+}
+
+/* -------- >Transition -------- */
+
+.hero-title {
+  -webkit-text-stroke: 0.5px #fff;
+  text-stroke: 0.5px #fff;
+}
+
+.is-loaded .c-team__card {
+  opacity: 1;
+  transform: translateY(0rem);
+}
+
+.c-team__card:nth-child(1) {
+  transition-delay: 0.5s;
+}
+
+.c-team__card:nth-child(2) {
+  transition-delay: 0.55s;
+}
+.c-team__card:nth-child(3) {
+  transition-delay: 0.6s;
+}
+
+.c-team__card-content-container,
+.c-team__card:nth-child(1) .c-team__card-content-image {
+  transition-delay: 0.6s;
+}
+
+.c-team__card-content-container,
+.c-team__card:nth-child(2) .c-team__card-content-image {
+  transition-delay: 0.7s;
+}
+.c-team__card-content-container,
+.c-team__card:nth-child(3) .c-team__card-content-image {
+  transition-delay: 0.75s;
+}
+
+.c-hero__description {
+  transition-delay: 0.6s;
+}
+
+.is-loaded .c-header,
+.is-loaded .c-hero__description {
+  opacity: 1;
+}
+
+.is-loaded .c-team__card-content-container,
+.is-loaded .c-team__card-content-image {
+  border-radius: 0.5rem;
+}
+
+.is-loaded .c-image_img {
+  transform: scale(1);
+}

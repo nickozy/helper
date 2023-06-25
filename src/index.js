@@ -1,14 +1,7 @@
 import modular from "modujs";
 import * as modules from "./modules";
-
-const html = document.documentElement;
-
-const appHeight = () => {
-  const doc = document.documentElement;
-  doc.style.setProperty("--vh", `${window.innerHeight}px`);
-};
-// window.addEventListener("resize", appHeight);
-appHeight();
+import { html } from "./utils/environment";
+import "./style.css";
 
 const app = new modular({
   modules: modules,
@@ -39,6 +32,6 @@ function init() {
   console.log(
     "%c%s",
     "padding: 6px; color: #fff; background: #000;",
-    "Development & Animation by Nick — https://t.me/nickxsy"
+    "Made by Nick — https://t.me/nickxsy"
   );
 }

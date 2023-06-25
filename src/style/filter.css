@@ -1,0 +1,115 @@
+/* -------- Filter position -------- */
+.c-filter__field.active .c-filter__field-ellipse {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.c-filter__field.active .c-filter__field-text {
+  padding-left: 3rem;
+}
+
+.c-filter__position {
+  pointer-events: none;
+}
+
+.c-filter__position:hover .c-filter__field-text {
+  opacity: 0.5;
+}
+
+.c-filter__field-text {
+  pointer-events: all;
+}
+
+.c-filter__field-text:hover {
+  opacity: 1 !important;
+}
+
+/* -------- >Filter position -------- */
+
+/* -------- Filter main -------- */
+
+.c-filter {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s ease, opacity 0.3s ease;
+}
+
+.c-filter__position-container,
+.c-filter__company-container {
+  visibility: hidden;
+  transition: visibility 0.3s ease;
+}
+
+.filter-active .c-filter {
+  visibility: visible;
+  opacity: 1;
+}
+
+[data-transition-delay="1"] {
+  transition-delay: 0.1s;
+}
+
+[data-transition-delay="2"] {
+  transition-delay: 0.2s;
+}
+
+.filter-active.is-grade .c-filter__position-container,
+.filter-active.is-company .c-filter__company-container {
+  visibility: visible;
+}
+
+.filter-active.is-grade .c-filter__position-container .c-filter__heading,
+.filter-active.is-company .c-filter__company-container .c-filter__heading {
+  opacity: 1;
+  transform: translateY(0rem);
+}
+
+.filter-active.is-grade .c-filter__position-container .c-filter__position,
+.filter-active.is-company .c-filter__company-container .c-filter__company {
+  opacity: 1;
+  transform: scale(1);
+}
+/* -------- >Filter main -------- */
+
+/* ----- Filter company ----- */
+
+.c-filter__company-field-text::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.c-filter__company-field .svg-elem-1 {
+  stroke-dashoffset: 630.3170776367188px;
+  stroke-dasharray: 630.3170776367188px;
+  -webkit-transition: stroke-dashoffset 0.6s cubic-bezier(1, 0, 0, 1) 0s;
+  transition: stroke-dashoffset 0.6s cubic-bezier(1, 0, 0, 1) 0s;
+}
+
+.c-filter__company-field.active .svg-elem-1 {
+  stroke-dashoffset: 0;
+}
+
+/* ----- >Filter company ----- */
+
+.c-filter__company-image {
+  transition-delay: 0.2s;
+}
+.c-filter__company-field.active .c-filter__company-image {
+  transform: scale(0.8);
+}
+
+.c-filter__company {
+  pointer-events: none;
+}
+
+.c-filter__company:hover .c-filter__company-field:not(.active) {
+  filter: grayscale(100);
+}
+
+.c-filter__company-field {
+  pointer-events: all;
+}
+.c-filter__company-field:hover {
+  filter: none !important;
+}

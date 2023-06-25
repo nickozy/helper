@@ -1,0 +1,46 @@
+/* ----- Team ----- */
+
+.c-team__card:hover .c-team__card-company-logo {
+  filter: none;
+}
+
+.c-team__card-content-container::before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  height: 20rem;
+  z-index: 1;
+  background-image: linear-gradient(
+    180deg,
+    rgba(19, 19, 19, 0) 0%,
+    #131313 100%
+  );
+}
+
+.c-team__card:hover .c-image_img {
+  transform: scale(1.1);
+}
+
+.c-team__card:hover .c-team__card-content {
+  transform: translateY(-3.5rem);
+}
+
+.c-team__list {
+  pointer-events: none;
+}
+
+.c-team__list:hover .c-team__card-item {
+  opacity: 0.5;
+}
+
+.c-team__card-item {
+  pointer-events: all;
+  transition: all 0.3s ease;
+}
+
+.c-team__card:hover .c-team__card-item {
+  opacity: 1 !important;
+}
+
+/* ----- >Team ----- */

@@ -1,0 +1,74 @@
+/* ----- Nav ----- */
+
+.c-header__logo {
+  transition: transform 0.6s cubic-bezier(0.38, 0.005, 0.215, 1);
+}
+
+.c-header__logo {
+  transform-origin: left top;
+}
+
+.has-logo-shrink.is-loaded .c-header__logo {
+  transform: scale(0.7);
+}
+
+/* ----- >Nav ----- */
+
+@media screen and (max-width: 991px) {
+  .has-logo-shrink.is-loaded .c-header__logo-mask {
+    width: 0rem;
+  }
+}
+
+.c-header__bg {
+  background: linear-gradient(
+    180deg,
+    rgba(19, 19, 19, 0.6),
+    rgba(19, 19, 19, 0.595) 6.67%,
+    rgba(19, 19, 19, 0.579) 13.33%,
+    rgba(19, 19, 19, 0.551) 20%,
+    rgba(19, 19, 19, 0.512) 26.67%,
+    rgba(19, 19, 19, 0.461) 33.33%,
+    rgba(19, 19, 19, 0.401) 40%,
+    rgba(19, 19, 19, 0.334) 46.67%,
+    rgba(19, 19, 19, 0.266) 53.33%,
+    rgba(19, 19, 19, 0.199) 60%,
+    rgba(19, 19, 19, 0.139) 66.67%,
+    rgba(19, 19, 19, 0.088) 73.33%,
+    rgba(19, 19, 19, 0.049) 80%,
+    rgba(19, 19, 19, 0.021) 86.67%,
+    rgba(19, 19, 19, 0.005) 93.33%,
+    transparent
+  );
+}
+.c-header__bg::before {
+  position: absolute;
+  right: 0;
+  left: 0;
+  display: block;
+  height: 12rem;
+  content: "";
+  background: linear-gradient(
+    180deg,
+    rgba(19, 19, 19, 0.95),
+    rgba(19, 19, 19, 0.934) 14.24%,
+    rgba(19, 19, 19, 0.902) 25.77%,
+    rgba(19, 19, 19, 0.857) 34.98%,
+    rgba(19, 19, 19, 0.799) 42.23%,
+    rgba(19, 19, 19, 0.733) 47.9%,
+    rgba(19, 19, 19, 0.658) 52.37%,
+    rgba(19, 19, 19, 0.579) 56%,
+    rgba(19, 19, 19, 0.496) 59.18%,
+    rgba(19, 19, 19, 0.412) 62.27%,
+    rgba(19, 19, 19, 0.329) 65.65%,
+    rgba(19, 19, 19, 0.249) 69.69%,
+    rgba(19, 19, 19, 0.173) 74.78%,
+    rgba(19, 19, 19, 0.106) 81.27%,
+    rgba(19, 19, 19, 0.047) 89.56%,
+    transparent
+  );
+}
+
+.has-logo-shrink .c-header__bg {
+  opacity: 1;
+}
