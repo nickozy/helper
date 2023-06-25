@@ -22,6 +22,11 @@
   transform: scale(1.1);
 }
 
+.c-team__card:hover .c-image_img,
+.c-team__card:hover .c-team__card-content-wrapper {
+  transition-delay: 0s !important;
+}
+
 .c-team__card:hover .c-team__card-content {
   transform: translateY(-3.5rem);
 }

@@ -60,6 +60,19 @@ a {
   white-space: nowrap;
 }
 
+@media (min-width: 2400px) {
+  html,
+  body {
+    font-size: 18px;
+  }
+}
+@media (max-width: 991px) and (min-width: 767px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 360px) {
   html,
   body {
